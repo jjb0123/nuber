@@ -1,9 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
+
 const initialState={
     origin: null, 
     destination: null, 
     travelTimeInformation: null,
-}
+};
 /* Data Layer*/
 export const navSlice = createSlice({
     name: 'nav',
@@ -18,8 +19,8 @@ export const navSlice = createSlice({
         setDestination: (state, action) => {
             state.destination= action.payload;
         },
-    }
-})
+    },
+});
 
 export const { setOrigin, setDestination, setTravelTimeInformation } = navSlice.actions;
 
@@ -29,5 +30,7 @@ export const selectOrigin = (state) => state.nav.origin;
 export const selectDestination = (state) => state.nav.destination;
 export const selectTravelTimeInformation = (state) => state.nav.travelTimeInformation;
 
+
+// Reduce in our store.js file. Initially wrote and now connecting it. 
 export default navSlice.reducer;
 
