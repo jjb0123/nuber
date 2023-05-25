@@ -8,6 +8,7 @@ import 'react-native-gesture-handler'
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import MapScreen from './screens/MapScreen';
+import { KeyboardAvoidingView } from 'react-native';
 
 // Redux installed
 
@@ -19,6 +20,9 @@ export default function App() {
     <Provider store={store}>
     <NavigationContainer>
       <SafeAreaProvider>
+      <KeyboardAvoidingView
+      behavior={Platform.OS === "ios" ? "padding": "height"} 
+      style={{ flex: 1}}>
           <Stack.Navigator>
             <Stack.Screen
               name = "HomeScreen"
@@ -35,6 +39,7 @@ export default function App() {
               }}
               />
           </Stack.Navigator>
+          </KeyboardAvoidingView>
       </SafeAreaProvider>
     </NavigationContainer>
     </Provider>
