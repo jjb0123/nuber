@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, SafeAreaView,TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView,TouchableOpacity, Image } from 'react-native';
 import React from 'react';
 import tw from 'tailwind-react-native-classnames';
 import { Icon } from 'react-native-elements';
@@ -40,8 +40,20 @@ const RideOptionsCard = () => {
             </TouchableOpacity>
             <Text style={tw`text-center py-5 text-xl`}>Choose your ride</Text>
         </View>
-        <FlatList 
-
+        <FlatList data={data}
+        keyExtractor={(item) => item.id}
+            renderItem={({item: { id, title, multiplier, image }}) => (
+            <TouchableOpacity>
+                <Image 
+                    style={{
+                        width:100,
+                        height:100,
+                        resizeMode:"contain",
+                    }}
+                    source = {{ uri: image }}
+                />
+            </TouchableOpacity>
+            )}
         />
     </SafeAreaView>
 
