@@ -1,4 +1,4 @@
-# uber-clone
+# NUber
 
 In this project, I created a clone of Uber's app using JavaScript, React, React Native, Redux.js, Google Autocomplete, various Google APIs, Tailwind CSS, Navigation and Expo's
 Live Development Environment. I made this app with the intention of revamping Northwestern's SafeRide app, and sent the overhaul to the developers of NU SafeRide for 
