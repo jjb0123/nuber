@@ -7,12 +7,13 @@ import { GOOGLE_MAPS_APIKEY } from "@env";
 import { useDispatch } from 'react-redux';
 import { setDestination, setOrigin } from '../slices/navSlice';
 import NavFavourites from '../components/NavFavourites';
+import logo from '../images/Untitled-2.png';
 
 /// Tailwind CSS 
 const HomeScreen = () => {
   const dispatch = useDispatch();
   return (
-    <SafeAreaView style={tw`bg-white h-full`}>
+    <SafeAreaView style={tw`bg-purple-200 h-full`}>
       <View style = {tw`p-5`}>
         <Image
         style ={{ 
@@ -20,9 +21,7 @@ const HomeScreen = () => {
             height:100, 
             resizeMode: 'contain',
         }}
-            source = {{
-                uri:"https://links.papareact.com/gzs",
-            }}
+            source = {logo}
         />
         <GooglePlacesAutocomplete 
         

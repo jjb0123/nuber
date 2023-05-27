@@ -16,6 +16,12 @@ const data = [
         location: "Work",
         destination: "London Eye, London, UK",
     },
+    {
+        id: "789",
+        icon: "book",
+        location: "University",
+        destination: 'Clark Street, Evanston IL',
+    },
 ];
 
 const NavFavourites = () => {

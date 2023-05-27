@@ -14,13 +14,13 @@ const NavigateCard = () => {
     const dispatch = useDispatch();
     const navigation = useNavigation();
   return (
-    <SafeAreaView style={tw`bg-white flex-1`}>
+    <SafeAreaView style={tw`bg-purple-200 flex-1`}>
       <Text style={tw`text-center py-5 text-xl`}>Good Morning, Josh</Text>
-      <View style={tw`border-t border-gray-200 flex-shrink`}>
-        <View>
+      <View style={tw`border-t border-purple-300 flex-shrink`}>
+        <View style = {tw`p-5 bg-purple-200`}>
             <GooglePlacesAutocomplete 
+            styles ={toInputBoxStyles}
             placeholder = "Where to?"
-            styles= {toInputBoxStyles} 
             fetchDetails={true}
             returnKeyType={"search"}
             minlength= {2}
@@ -43,7 +43,7 @@ const NavigateCard = () => {
         </View>
         <NavFavourites />
       </View>
-      <View style={tw`flex-row bg-white justify-evenly py-2 mt-auto border-t border-gray-100`}>
+      <View style={tw`flex-row bg-purple-200 justify-evenly py-2 mt-auto border-t border-purple-300`}>
         <TouchableOpacity 
         onPress = {() => navigation.navigate("RideOptionsCard")}
         style={tw`flex justify-between flex-row bg-black w-24 px-4 py-3 rounded-full`}>
