@@ -2,7 +2,7 @@ import { StyleSheet, Text, View, TouchableOpacity, FlatList } from 'react-native
 import React from 'react'
 import { Icon } from 'react-native-elements';
 import tw from 'tailwind-react-native-classnames';
-
+//
 const data = [
     {
         id: "123",

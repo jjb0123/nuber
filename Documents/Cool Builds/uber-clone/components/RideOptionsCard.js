@@ -29,7 +29,7 @@ const data =[
     },
 ];
 
-
+//
 //surge pricing
 const SURGE_CHARGE_RATE = 1.5;
 

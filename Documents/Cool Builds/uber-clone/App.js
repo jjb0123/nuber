@@ -12,7 +12,7 @@ import { KeyboardAvoidingView } from 'react-native';
 
 // Redux installed
 
-
+//
 export default function App() {
   const Stack = createStackNavigator();
 

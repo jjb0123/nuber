@@ -8,7 +8,7 @@ import { useRef } from 'react';
 import MapViewDirections from 'react-native-maps-directions';
 import { GOOGLE_MAPS_APIKEY } from '@env';
 import { useDispatch } from 'react-redux';
-
+//
 const Map = () => {
     const origin = useSelector(selectOrigin);
     const destination = useSelector(selectDestination);

@@ -8,7 +8,7 @@ import { useDispatch } from 'react-redux';
 import { setDestination, setOrigin } from '../slices/navSlice';
 import NavFavourites from '../components/NavFavourites';
 import logo from '../images/Untitled-2.png';
-
+//
 /// Tailwind CSS 
 const HomeScreen = () => {
   const dispatch = useDispatch();

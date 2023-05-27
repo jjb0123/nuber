@@ -5,7 +5,7 @@ import { Icon } from "react-native-elements";
 import { useNavigation } from '@react-navigation/native';
 import { useSelector } from 'react-redux';
 import { selectOrigin } from '../slices/navSlice';
-
+//
 const data = [
   {
     id: "123",
