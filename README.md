@@ -18,3 +18,4 @@ To build this, I was assisted by Sonny Sangha in his react-native livestreams. C
 
 Full functionality of the app can be seen below! 
 
+https://youtube.com/shorts/__2HQhXvuhU?feature=share
